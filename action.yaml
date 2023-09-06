@@ -1,0 +1,9 @@
+name: 'Get release or tag'
+description: 'Gets a release or tag.'
+inputs:
+outputs:
+  tag: 
+    description: 'The tag for a release. Otherwise, $GITHUB_SHA'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
