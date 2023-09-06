@@ -7,7 +7,6 @@ Usage:
 on:
   release:
     types: [ published ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -26,7 +25,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Log in to Azure container registry
+      - name: Log in to container registry
         uses: docker/login-action@v2
         with:
           registry: yourregistryhere
